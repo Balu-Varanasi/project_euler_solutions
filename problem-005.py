@@ -10,19 +10,22 @@ What is the smallest number that is evenly divisible by all of the numbers from
 
 """
 
-def gcd(a,b):
-    """returns Greatest Common Divisor of given two integers 'a' and 'b'"""
-    if(b==0):
-        return a
-    return gcd(b,a%b)
+def gcd(a, b):
 
-def lcm(a,b):
+    """returns Greatest Common Divisor of given two integers 'a' and 'b'"""
+
+    if(b == 0):
+        return a
+
+    return gcd(b, a % b)
+
+def lcm(a, b):
     """return Least Common Factor of given two integers 'a' and 'b'"""
-    return b*a/gcd(a,b)
+    return b * a / gcd(a, b)
 
 ans = 2
 
-for i in range(3,20):
-    ans = lcm(ans,i)
+for i in range(3, 20):
+    ans = lcm(ans, i)
 
 print ans 
