@@ -18,15 +18,13 @@ Logic:
 
 """
 
+
 def factorial(n):
-
     """Function which calculates the Factorial of given number"""
-
     if n == 0:
         fact = 1
     else:
-        fact = n * factorial(n-1)
-
+        fact = n * factorial(n - 1)
     return fact
 
 print factorial(20 + 20) / (factorial(20) * factorial(20))

@@ -54,6 +54,7 @@ for i in range(0, len(s) - 4):
 
     for j in range(i, i + 5):
         product = product * int(s[j])
-    if product > n : n = product
+    if product > n:
+        n = product
 
 print n

@@ -10,6 +10,7 @@ Find the sum of all the primes below two million.
 
 import math
 
+
 def is_prime(n):
 
     """A function that checks wheather a given number is prime or not"""

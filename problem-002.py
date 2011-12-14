@@ -7,8 +7,9 @@ four million, find the sum of the even-valued terms.
 
 """
 
+
 def fib_sequence(max_number):
-    """ Generates Fibonacci Sequence as a list, upto given 'maximum' number""" 
+    """ Generates Fibonacci Sequence as a list, upto given 'maximum' number"""
     first_term = 1
     second_term = 2
 

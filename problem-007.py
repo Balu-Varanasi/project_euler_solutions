@@ -16,20 +16,15 @@ max = 10001
 count = 1
 number = 3
 
+
 def is_prime(n):
-
     """A function that checks whether the given number is prime or not"""
-
     if(n % 2 == 0):
         return 0
-
     root = int(sqrt(n))
-
-    for i in range(3, root+1):
-
+    for i in range(3, root + 1):
         if(n % i == 0):
             return 0
-
     return 1
 
 while(1):
